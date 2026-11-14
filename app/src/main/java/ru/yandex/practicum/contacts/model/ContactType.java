@@ -7,5 +7,9 @@ public enum ContactType {
     SIGNAL,
     THREEMA,
     PHONE,
-    EMAIL
+    EMAIL;
+
+    public static String[] getContactTypes() {
+        return new String[]{TELEGRAM.name(), WHATS_APP.name(), VIBER.name(), SIGNAL.name(), THREEMA.name(), PHONE.name(), EMAIL.name()};
+    }
 }
